@@ -1,0 +1,55 @@
+
+
+1.请求错误码
+public static final int CODE_FILE_NAME_IS_INVALID               = 4002;
+
+public static final int CODE_FILE_NOT_EXIST = 4003;
+public static final int CODE_CANT_HANDLE_ERROR               = 4007;
+public static final int CODE_FILE_NOT_EXISTS_OR_NOT_ALLOWED_SUCH_OPERATE = 4008;
+public static final int CODE_FILE_NOT_MODIFIED                = 4005;
+public static final int CODE_FILE_BLOCK_EXIST               = 4006;
+public static final int CODE_NEED_LOGIN                = 2001;
+public static final int CODE_PWD_ERROR                = 2010;
+public static final int CODE_SPACE_NOT_ENOUGH                = 4001;
+public static final int CODE_NO_POWER                = 1005;
+
+CODE_MAP.put(1001, "服务器错误！");
+CODE_MAP.put(1002, "接口不存在！");
+CODE_MAP.put(1003, "请求缺少参数！");
+CODE_MAP.put(1004, "参数错误！");
+CODE_MAP.put(CODE_NO_POWER, "权限不足！");
+CODE_MAP.put(1006, "超级管理员不能登录客户端！");
+CODE_MAP.put(1100, "该文件可能已不存在！");
+CODE_MAP.put(CODE_NEED_LOGIN, "您尚未登录！");
+CODE_MAP.put(2003, "账号、密码或域名错误！");
+CODE_MAP.put(2005, "登录失败！");
+CODE_MAP.put(2007, "重置密码错误！");）
+CODE_MAP.put(2009, "当前账户不可用，可能已被锁定！");
+CODE_MAP.put(CODE_PWD_ERROR, "密码输入错误！");
+CODE_MAP.put(CODE_SPACE_NOT_ENOUGH, "操作失败，使用空间不足！");
+CODE_MAP.put(CODE_FILE_NAME_IS_INVALID, "操作失败，文件名不可用！");
+CODE_MAP.put(CODE_FILE_NOT_EXIST, "操作失败，文件不存在！");
+CODE_MAP.put(4004, "操作失败，不允许此操作！");
+CODE_MAP.put(CODE_FILE_NOT_EXISTS_OR_NOT_ALLOWED_SUCH_OPERATE, "操作失败，文件不存在或无权限！");
+CODE_MAP.put(CODE_FILE_NOT_MODIFIED, "上传成功！");
+CODE_MAP.put(CODE_FILE_BLOCK_EXIST, "上传成功！");
+CODE_MAP.put(4007, "操作失败，文件已被创建！");
+CODE_MAP.put(4009, "移动完成！");
+
+
+
+Xcode 开发插件：
+1.一个Xcode插件，可以在当前的窗口内创建一个代码迷你地图，并在屏幕上高亮提示。
+项目地址： https://github.com/stefanceriu/SCXcodeMiniMap
+2.CocoaPods for Xcode
+非常方便的Xcode pods插件。可以很方便的在Xcode通过pods安装各种objective-c第三方库，省去以前还要手动去跑pods命令行的麻烦；此外，还支持通过cocoaDocs来安装库文档。
+项目地址：https://github.com/kattrali/cocoapods-xcode-plugin
+3.规范注释生成器VVDocumenter
+很多时候，为了快速开发，很多的技术文档都是能省则省，这个时候注释就变得异常重要，再配合Doxygen这种注释自动生成文档的，就完美了。但是每次都要手动输入规范化的注释，着实也麻烦，但有了VVDocumenter，规范化的注释，主需要输入三个斜线“///”，就OK啦！
+项目地址：https://github.com/onevcat/VVDocumenter-Xcode
+4. KSImageNamed-Xcode
+为项目中使用的UIImage的imageNamed提供文件名自动补全功能。使用[UIImage imageNamed:@"xxx"]时，该插件会扫描整个workspace中的图片文件。
+项目地址： https://github.com/ksuther/KSImageNamed-Xcode
+5.FuzzyAutocompletePlugin--Xcode 5代码自动补全插件
+FuzzyAutocompletePlugin是一个Xcode 5兼容的插件，通过添加模糊匹配来提高Xcode代码自动补全功能，开发者无需遵循从头匹配的原则，只要记得方法里某个关键字即可进行匹配，很好地提高了工作效率。
+项目地址：https://github.com/chendo/FuzzyAutocompletePlugin
